@@ -1,0 +1,168 @@
+:root {
+  --vermelho: #e50914;
+  --preta: #141414;
+  --acolor: #aaa;
+  --ahovercolor: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Elementos base*/
+
+body {
+  background-color: var(--preta);
+  font-family: "arial", Times, serif;
+  color: white;
+}
+
+header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  color: var(--vermelho);
+  margin-left: 5px;
+  font-family: "arial black", Times;
+  font-size: 40px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: var(--acolor);
+  margin-right: 10px;
+}
+
+header nav a:hover {
+  color: var(--ahovercolor);
+}
+
+/*Filme principal*/
+
+.filme-principal {
+  font-size: 16px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+    url("/img/planodefundo.jpg");
+
+  height: 600px;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.filme-principal .descricao {
+  margin-top: 10px;
+  margin-bottom: 90px;
+}
+
+.filme-principal .titulo {
+  margin-top: 15%;
+  font-size: 50px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.botao {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+
+  padding: 15px 30px;
+  margin-right: 20px;
+  font-size: 12px;
+
+  cursor: pointer;
+  transition: 0.5s ease all;
+}
+
+.botao:hover {
+  color: black;
+  background-color: white;
+}
+.botao i {
+  margin-right: 8px;
+}
+
+.container {
+  margin-left: 20px;
+}
+
+.filme-principal .container {
+  width: 70%;
+}
+
+.box-filme {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+/* WRAPPER = ENVELOPAR */
+
+.popup {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 1200px;
+  height: 800px;
+  padding: 15px;
+  border: solid 1px;
+  background: black;
+  display: none;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(184, 175, 184, 1);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(184, 175, 184, 1);
+  box-shadow: 0px 3px 5px 0px rgba(184, 175, 184, 1);
+}
+
+.botaoFechar {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+
+  padding: 15px 30px;
+  margin-right: 20px;
+  font-size: 12px;
+
+  cursor: pointer;
+  transition: 0.5s ease all;
+}
+
+.botaoFechar:hover {
+  color: black;
+  background-color: white;
+}
+.botaoFechar i {
+  margin-right: 8px;
+}
+
+.popupI {
+  display: flex;
+  flex-direction: row;
+}
+
+.popupI #infos {
+  padding: 10px 20px 10px;
+}
+#imgPrincipal {
+  border-radius: 20px;
+}
+
+#descricaoI {
+  margin-top: 100px;
+  max-width: 800px;
+}
+
+#mainInfo {
+  margin-top: 100px;
+  max-width: 800px;
+}
